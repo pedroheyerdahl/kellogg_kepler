@@ -91,7 +91,7 @@
               // mount keplerGl reducer
               keplerGl: keplerGl.keplerGlReducer.initialState({
                 uiState: {
-                  readOnly: true,
+                  readOnly: false,
                   currentModal: null
                 }
               })
@@ -174,7 +174,7 @@
               return react.createElement(
                 'div',
                 {style: {position: 'absolute', left: 0, width: '100vw', height: '100vh'}},
-                LogoSvg(),
+                
                 react.createElement(keplerGl.KeplerGl, {
                   mapboxApiAccessToken: mapboxToken,
                   id: "map",
